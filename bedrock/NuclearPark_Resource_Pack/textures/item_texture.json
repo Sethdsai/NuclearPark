@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "nuclearpark",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "nuclearpark:nuclear_bomb": {
+            "textures": "textures/items/nuclear_bomb"
+        },
+        "nuclearpark:parks_spawn_egg": {
+            "textures": "textures/items/parks_spawn_egg"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.40",
+    "minecraft:item": {
+        "description": {
+            "identifier": "nuclearpark:parks_spawn_egg",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.mobEgg"
+            }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Parks Spawn Egg"
+            },
+            "minecraft:icon": {
+                "texture": "nuclearpark:parks_spawn_egg"
+            },
+            "minecraft:max_stack_size": 64,
+            "minecraft:entity_placer": {
+                "entity": "nuclearpark:parks",
+                "dispense_on": ["minecraft:grass", "minecraft:dirt", "minecraft:stone"]
+            }
+        }
+    }
+}

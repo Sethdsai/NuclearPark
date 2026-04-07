@@ -1,53 +1,82 @@
 # NuclearPark
 
-A Minecraft mod that adds nuclear explosives and the deadly Parks mob.
+a minecraft mod i made. has a nuke and a pet that kills everything.
 
-## What's in this mod
+## the nuke
 
-### Nuclear Bomb
-Yeah it's a nuke. Pretty self explanatory. Right click on something and boom - massive explosion. Like, really massive. Destroys everything in a 50 block radius, sets fires everywhere, and leaves radiation damage for anything that somehow survives.
+it's a nuclear bomb. it goes boom. really big boom.
 
-Be careful with this thing. I mean it.
+destroys like 50 blocks in every direction, sets everything on fire. there's also this radiation thing that hurts stuff even further out. pretty destructive tbh.
 
-### Parks
-This is Parks. Parks is your pet. Parks kills everything.
+you can find it in the creative menu under combat stuff. i haven't made a crafting recipe yet because honestly i keep forgetting. maybe next update.
 
-Seriously, Parks will one-shot any mob in the game. The Wither? Dead. The Ender Dragon? Gone. A whole army of zombies? Didn't even break a sweat.
+**warning:** this will absolutely destroy your world. make backups or use a test world. i'm not kidding.
 
-How to get Parks to like you:
-- Feed Parks bones (like a wolf but way more deadly)
-- Once tamed, Parks follows you around
-- Right click to make Parks sit/stay
-- Feed rotten flesh to heal Parks
+## parks
 
-Parks has:
-- 500 health (yeah, that's a lot)
-- Does 1000 damage per hit (instakill basically)
-- Immune to fire, explosions, and magic
-- Tracks your kills for you
+parks is this weird creature i made. it's your pet but also it kills everything.
 
-## Requirements
-- Minecraft 1.20.4
-- Forge 49.0.26 or later
-- Java 17
+here's the deal with parks:
+- feed it bones and it'll like you
+- once it likes you it follows you around and murders your enemies
+- right click to make it sit
+- feed it rotten flesh to heal it
+- it's got like 500 health so it's pretty hard to kill
+- it does 1000 damage per hit which means everything just dies instantly
+- fire and explosions don't hurt it
+- there's this kill counter thing that tracks how many things it's killed
 
-## Installation
-1. Install Forge for 1.20.4
-2. Drop the jar file in your mods folder
-3. Launch Minecraft
-4. Try not to blow up your world
+yeah parks is kind of overpowered. that's the point.
 
-## Downloads
-Check the [Releases](https://github.com/Sethdsai/NuclearPark/releases) page for downloads.
+## how to install (java edition)
 
-## Building from source
+1. get forge for 1.20.4
+2. download the mod file
+3. put it in your mods folder
+4. launch the game
+5. blow stuff up
+
+## how to install (bedrock edition)
+
+1. download the bedrock version zip
+2. extract it somewhere
+3. double click the .mcpack files or manually put them in your behavior_packs and resource_packs folders
+4. enable the packs in your world settings
+5. have fun
+
+## requirements
+
+**java edition:**
+- minecraft 1.20.4
+- forge 49.0.26
+- java 17
+
+**bedrock edition:**
+- minecraft bedrock 1.20.4 or newer
+- that's it, no forge needed
+
+## building from source
+
+if you want to build the java version yourself:
+
 ```
 ./gradlew build
 ```
-The compiled jar will be in `build/libs/`
 
-## Credits
-Made by Sethdsai in 2026
+the jar ends up in `build/libs/`
 
-## License
-MIT License - do whatever you want with it, just don't blame me when you nuke your survival world.
+## credits
+
+made by sethdsai in 2026
+
+## license
+
+mit license. do whatever. don't sue me if you blow up your survival world.
+
+## changelog
+
+### v1.0.0
+- first release
+- added the nuke
+- added parks
+- probably has bugs, let me know on the issues page

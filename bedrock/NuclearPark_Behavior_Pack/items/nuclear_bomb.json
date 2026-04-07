@@ -1,0 +1,35 @@
+{
+    "format_version": "1.20.40",
+    "minecraft:item": {
+        "description": {
+            "identifier": "nuclearpark:nuclear_bomb",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Nuclear Bomb"
+            },
+            "minecraft:icon": {
+                "texture": "nuclearpark:nuclear_bomb"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 1,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sword"
+            },
+            "minecraft:foil": true,
+            "minecraft:glint": true,
+            "minecraft:cooldown": {
+                "category": "nuclear_bomb",
+                "duration": 5.0
+            }
+        }
+    }
+}

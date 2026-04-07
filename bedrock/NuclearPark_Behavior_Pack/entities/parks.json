@@ -1,0 +1,185 @@
+{
+    "format_version": "1.20.40",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "nuclearpark:parks",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "nuclearpark:parks_baby": {
+                "minecraft:scale": {
+                    "value": 0.5
+                }
+            },
+            "nuclearpark:parks_tame": {
+                "minecraft:is_tamed": {},
+                "minecraft:behavior.follow_owner": {
+                    "priority": 4,
+                    "speed_multiplier": 1.0,
+                    "start_distance": 10,
+                    "stop_distance": 2
+                },
+                "minecraft:behavior.stay_while_sitting": {
+                    "priority": 3
+                }
+            },
+            "nuclearpark:parks_sitting": {
+                "minecraft:is_sitting": {}
+            },
+            "nuclearpark:parks_angry": {
+                "minecraft:angry": {
+                    "duration": -1,
+                    "broadcast_anger": true,
+                    "broadcast_range": 20
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": ["parks", "mob", "tamable"]
+            },
+            "minecraft:health": {
+                "value": 500,
+                "max": 500
+            },
+            "minecraft:movement": {
+                "value": 0.4
+            },
+            "minecraft:attack": {
+                "damage": 1000
+            },
+            "minecraft:collision_box": {
+                "width": 0.9,
+                "height": 1.2
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:navigation.walk": {
+                "can_path_over_water": true,
+                "avoid_water": false,
+                "can_break_doors": true
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 0.5
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 5,
+                "look_distance": 8,
+                "probability": 0.02
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.melee_attack": {
+                "priority": 3,
+                "speed_multiplier": 1.5,
+                "track_target": true
+            },
+            "minecraft:behavior.owner_hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.owner_hurt_target": {
+                "priority": 2
+            },
+            "minecraft:tamable": {
+                "probability": 0.33,
+                "tame_items": ["minecraft:bone"],
+                "tame_event": {
+                    "event": "minecraft:on_tame",
+                    "target": "self"
+                }
+            },
+            "minecraft:healable": {
+                "items": [
+                    {
+                        "item": "minecraft:rotten_flesh",
+                        "heal_amount": 20
+                    }
+                ]
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "value": "minecraft:air"
+                                    },
+                                    {
+                                        "test": "is_tamed",
+                                        "subject": "self"
+                                    }
+                                ]
+                            }
+                        },
+                        "action": {
+                            "toggle_sitting": {}
+                        }
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "any_of": [
+                                    {"test": "has_damage", "value": "fire"},
+                                    {"test": "has_damage", "value": "fire_tick"},
+                                    {"test": "has_damage", "value": "lava"},
+                                    {"test": "has_damage", "value": "explosion"},
+                                    {"test": "has_damage", "value": "magic"}
+                                ]
+                            }
+                        },
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/empty.json"
+            },
+            "minecraft:scale": {
+                "value": 1.0
+            },
+            "minecraft:particle_appearance": {
+                "particle": "minecraft:basic_flame_particle"
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "weight": 100
+                    }
+                ]
+            },
+            "minecraft:on_tame": {
+                "add": {
+                    "component_groups": ["nuclearpark:parks_tame"]
+                }
+            }
+        }
+    }
+}

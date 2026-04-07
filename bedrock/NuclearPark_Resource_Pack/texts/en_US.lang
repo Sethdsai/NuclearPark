@@ -1,0 +1,10 @@
+{
+    "entity.nuclearpark.parks": "Parks",
+    "entity.nuclearpark.parks.name": "Parks",
+    "item.nuclearpark:nuclear_bomb": "Nuclear Bomb",
+    "item.nuclearpark:nuclear_bomb.name": "Nuclear Bomb",
+    "item.nuclearpark:parks_spawn_egg": "Parks Spawn Egg",
+    "item.nuclearpark:parks_spawn_egg.name": "Parks Spawn Egg",
+    "item.nuclearpark:nuclear_bomb.desc": "pretty self explanatory",
+    "pack.description": "adds a nuke and parks the deadly pet"
+}

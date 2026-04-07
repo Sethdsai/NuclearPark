@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "nuclearpark:parks",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/parks"
+            },
+            "geometry": {
+                "default": "geometry.parks"
+            },
+            "render_controllers": ["controller.render.default"],
+            "spawn_egg": {
+                "base_color": "#2d0a31",
+                "overlay_color": "#ff0000"
+            }
+        }
+    }
+}
