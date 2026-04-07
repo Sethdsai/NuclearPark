@@ -1,0 +1,9 @@
+{
+    "item.nuclearpark.nuclear_bomb": "Nuclear Bomb",
+    "entity.nuclearpark.parks": "Parks",
+    "item.nuclearpark.nuclear_bomb.desc": "The ultimate weapon. Use with extreme caution.",
+    "entity.nuclearpark.parks.desc": "Your loyal and deadly companion.",
+    "subtitles.nuclearpark.nuclear_explosion": "Nuclear Explosion",
+    "subtitles.nuclearpark.parks_growl": "Parks growls",
+    "subtitles.nuclearpark.parks_death": "Parks dies"
+}

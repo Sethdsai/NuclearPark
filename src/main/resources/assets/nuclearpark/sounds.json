@@ -1,0 +1,17 @@
+{
+    "nuclearpark.nuclear_explosion": {
+        "sounds": [
+            "nuclearpark:nuclear_explosion"
+        ]
+    },
+    "nuclearpark.parks_growl": {
+        "sounds": [
+            "nuclearpark:parks_growl"
+        ]
+    },
+    "nuclearpark.parks_death": {
+        "sounds": [
+            "nuclearpark:parks_death"
+        ]
+    }
+}
